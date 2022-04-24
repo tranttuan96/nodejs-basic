@@ -8,6 +8,8 @@ const initWebRoute = (app) => {
 
     router.get('/detail/user/:userId', homeController.getDetailPage)
 
+    router.post('/create-new-user', homeController.createNewUser)
+
     router.get('/about', (req, res) => {
         res.send('hello')
     })
